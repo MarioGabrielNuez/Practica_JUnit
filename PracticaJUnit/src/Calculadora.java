@@ -21,29 +21,29 @@ public class Calculadora {
 	public double suma(double valor1, double valor2) {
 		return valor1 + valor2;
 	}
-//	
-//	/**
-//	 * Metodo resta
-//	 * @param double a
-//	 * @param double b
-//	 * 
-//	 * @return double
-//	 */
-//	public double resta(double valor1 , double valor2) {
-//		
-//	}
-//	
-//	/**
-//	 * Metodo multiplicacion
-//	 * @param double a
-//	 * @param double b
-//	 * 
-//	 * @return double
-//	 */
-//	public double multiplicacion(double valor1, double valor2) {
-//		
-//	}
-//	
+	
+	/**
+	 * Metodo resta
+	 * @param double a
+	 * @param double b
+	 * 
+	 * @return double
+	 */
+	public double resta(double valor1 , double valor2) {
+		return valor1 - valor2;
+	}
+	
+	/**
+	 * Metodo multiplicacion
+	 * @param double a
+	 * @param double b
+	 * 
+	 * @return double
+	 */
+	public double multiplicacion(double valor1, double valor2) {
+		return valor1 * valor2;
+	}
+	 
 //	/**
 //	 * Metodo division
 //	 * @param double a
