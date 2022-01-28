@@ -44,105 +44,117 @@ public class Calculadora {
 		return valor1 * valor2;
 	}
 	 
-//	/**
-//	 * Metodo division
-//	 * @param double a
-//	 * @param double b
-//	 * 
-//	 * @return double
-//	 */
-//	public double division(double valor1, double valor2) {
-//		
-//	}	
-//	
-//	/**
-//	 * Metodo factorial
-//	 * @param double num1
-//	 * 
-//	 * @return double
-//	 */
-//	private double factorial(double num1) {
-//
-//	}
-//	
-//	/**
-//	 * Metodo raizCuadrada
-//	 * @param double valor
-//	 * 
-//	 * @return double
-//	 */
-//	private double raizCuadrada(double valor) {
-//		
-//	}
-//	
-//	/**
-//	 * Metodo potencia
-//	 * @param double base
-//	 * @param double exponente
-//	 * 
-//	 * @return double
-//	 */
-//	private double potencia(double base, double exponente) {
-//
-//	}
-//	
-//	/**
-//	 * Metodo seno
-//	 * @param double angulo
-//	 * 
-//	 * @return double
-//	 */
-//	private double seno(double angulo) {
-//
-//	}
-//	
-//	/**
-//	 * Metodo coseno
-//	 * @param double angulo
-//	 * 
-//	 * @return double
-//	 */
-//	private double coseno(double angulo) {
-//
-//	}
-//	
-//	/**
-//	 * Metodo tangente
-//	 * @param double angulo
-//	 * 
-//	 * @return double
-//	 */
-//	private double tangente(double angulo) {
-//
-//	}
-//	
-//	/**
-//	 * Metodo arcoseno
-//	 * @param double angulo
-//	 * 
-//	 * @return double
-//	 */
-//	private static double arcoseno(double angulo) {
-//
-//	}
-//	
-//	/**
-//	 * Metodo arcocoseno
-//	 * @param double angulo
-//	 * 
-//	 * @return double
-//	 */
-//	private static double arcocoseno(double angulo) {
-//
-//	}
-//	
-//	/**
-//	 * Metodo arcotangente
-//	 * @param double angulo
-//	 * 
-//	 * @return double
-//	 */
-//	private static double arcotangente(double angulo) {
-//		
-//	}
+	/**
+	 * Metodo division
+	 * @param double a
+	 * @param double b
+	 * 
+	 * @return double
+	 */
+	public double division(double valor1, double valor2) {
+		if (valor2 != 0) {
+			return valor1 / valor2;
+		} else {
+			throw new ArithmeticException("el divisor no puede ser 0");
+		}
+	}	
+	
+	/**
+	 * Metodo factorial
+	 * @param double num1
+	 * 
+	 * @return double
+	 */
+	public double factorial(double num1) {
+		double res = 0;
+		if (num1 == 2) {
+			res = 2;
+		} else if (num1 <= 1){
+			res = 1;
+		} else {
+			res = num1 * factorial(num1 - 1);
+		}
+		return res;
+	}
+	
+	/**
+	 * Metodo raizCuadrada
+	 * @param double valor
+	 * 
+	 * @return double
+	 */
+	public double raizCuadrada(double valor) {
+		return Math.sqrt(valor);
+	}
+	
+	/**
+	 * Metodo potencia
+	 * @param double base
+	 * @param double exponente
+	 * 
+	 * @return double
+	 */
+	public double potencia(double base, double exponente) {
+		return Math.pow(base, exponente);
+	}
+	
+	/**
+	 * Metodo seno
+	 * @param double angulo
+	 * 
+	 * @return double
+	 */
+	public double seno(double angulo) {
+		return Math.sin(angulo);
+	}
+	
+	/**
+	 * Metodo coseno
+	 * @param double angulo
+	 * 
+	 * @return double
+	 */
+	public double coseno(double angulo) {
+		return Math.cos(Math.toRadians(angulo));
+	}
+	
+	/**
+	 * Metodo tangente
+	 * @param double angulo
+	 * 
+	 * @return double
+	 */
+	public double tangente(double angulo) {
+		return Math.tan(Math.toRadians(angulo));
+	}
+	
+	/**
+	 * Metodo arcoseno
+	 * @param double angulo
+	 * 
+	 * @return double
+	 */
+	public static double arcoseno(double angulo) {
+		return Math.asin(Math.toRadians(angulo));
+	}
+	
+	/**
+	 * Metodo arcocoseno
+	 * @param double angulo
+	 * 
+	 * @return double
+	 */
+	public static double arcocoseno(double angulo) {
+		return Math.acos(Math.toRadians(angulo));
+	}
+	
+	/**
+	 * Metodo arcotangente
+	 * @param double angulo
+	 * 
+	 * @return double
+	 */
+	public static double arcotangente(double angulo) {
+		return Math.atan(Math.toRadians(angulo));
+	}
 }
